@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo" data-aos="fade-left" data-aos-duration="1000"><img src="images/logo.png" alt=""></div>
+        <ul class="list-items" data-aos="fade-right" data-aos-duration="1000">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="sunglass.html">SUNGLASSES</a></li>
+            <li><a href="eyeglasses.html">EYEGLASSES</a></li>
+            <li><a style="border-bottom:2px solid rgb(53, 50, 50); border-top:2px solid rgb(53, 50, 50); text-shadow: 1px 1px 0px rgb(13, 20, 20);" href="contact.html">CONTACT US</a></li>
+
+        </ul>
+        <div class="mobile-navbar-btn">
+            <i class='bx bx-menu-alt-right'></i>
+            <i class='bx bx-x'></i>
+        </div>
+    </nav>
+    <section class="form-container" style="margin-top: 40px;" data-aos="fade-up" data-aos-duration="1500">
+        <div class="contact-form-container">
+            <h2 style="background-color:white;">Contact Us</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <div class="form-group" style="background-color:white;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group" style="background-color:white;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group" style="background-color:white;">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+
+
+                <div class="form-group" style="background-color:white;">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" onclick="showAlert()">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
+        <div class="footer-section">
+            <h3>Shop All</h3>
+            <ul>
+                <li><a href="#">All Eyeglasses</a></li>
+                <li><a href="#">All Sunglasses</a></li>
+                <li><a href="#">All Men's Eyeglasses</a></li>
+                <li><a href="#">All Women's Eyeglasses</a></li>
+                <li><a href="#">All Kids' Eyeglasses</a></li>
+                <li><a href="#">Virtual Try-On</a></li>
+                <li><a href="#">Shop By Color</a></li>
+                <li><a href="#">Eyewear Trends</a></li>
+                <li><a href="#">Shop our Instagram</a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-section">
+            <h3>Learn</h3>
+            <ul>
+                <li><a href="#">Aftercare Guides</a></li>
+                <li><a href="#">Optical Center</a></li>
+                <li><a href="#">How to Buy Glasses Online</a></li>
+                <li><a href="#">How to Read Your Prescription</a></li>
+                <li><a href="#">Lens Hub</a></li>
+                <li><a href="#">Lens Index & Material Guide</a></li>
+                <li><a href="#">How to Get your PD</a></li>
+                <li><a href="#">zFORT© Blue Light Glasses</a></li>
+                <li><a href="#">Best Eyeglasses For Your Face Shape</a></li>
+                <li><a href="#">How to Measure your Frame Size</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">We Care</a></li>
+                <li><a href="#">Eyes on the Future</a></li>
+                <li><a href="#">SBGClub</a></li>
+                <li><a href="#">Authenticity</a></li>
+                <li><a href="#">Best Price Guarantee</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Meet our optical experts</a></li>
+            </ul>
+        </div>
+
+        <div class="email">
+            <div style="background-color: #eef4f7;" class="email1">
+                <h1>Get In Touch:</h1>
+
+            </div>
+
+            <div style="background-color: #eef4f7;" class="form-group">
+                <label style="background-color: #eef4f7;" for="email">Email:</label>
+                <input type="email" placeholder="@gmail.com" name="email" required>
+            </div>
+            <div class="form-group">
+                <button style="background-color: rgb(127, 127, 229);" type="submit">Submit</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/havenshades?mibextid=ZbWKwL" class="icon facebook"></a>
+                <a href="https://whatsapp.com/channel/0029VakQU940bIdskxOC7o0l" class="icon whatsapp"></a>
+                <a href="https://www.instagram.com/havenshades.pk?igsh=MWd1Y3pqZTQ5aGJzZw==" class="icon instagram"></a>
+            </div>
+
+
+
+
+
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
